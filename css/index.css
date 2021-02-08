@@ -1,0 +1,51 @@
+.image-block {
+  display: grid;
+  grid-template-columns: repeat(2, 0.8fr) 1.4fr;
+  gap: 5px 30px;
+  grid-template-areas:
+    "image image image"
+    "title dates description";
+}
+
+.image {
+  grid-area: image;
+  max-height: 40vh;
+  width: 100%;
+  background-color: #a3a57d;
+  margin-top: 60px;
+}
+
+.image img {
+  max-height: 36vh;
+  margin: 2vh;
+}
+
+.title {
+  grid-area: title;
+  align-self: start;
+  font-weight: 500;
+  margin: 0;
+}
+
+.title a {
+  text-decoration: none;
+  color: #F28482;
+
+}
+
+.title a:hover {
+  text-decoration: none;
+  color: #F5CAC3;
+}
+
+.dates {
+  grid-area: dates;
+  align-self: start;
+  margin-top: 10px;
+}
+
+.description {
+  grid-area: description;
+  align-self: start;
+  margin-top: 10px;
+}
