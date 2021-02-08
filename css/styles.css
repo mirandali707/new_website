@@ -1,0 +1,119 @@
+/* @font-face {
+  font-family: "Bagnard Sans";
+  src: url('../fonts/BagnardSans.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Cotham Sans";
+  src: url('../fonts/CothamSans.otf') format('opentype');
+} */
+
+
+html, body {
+  /* font-family: "Space Grotesk", sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* font-weight: 300; */
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+a {
+  transition: opacity 0.2s ease-in-out;
+}
+
+#miranda {
+  margin-left: 20px;
+  font-size: 32px;
+  /* font-family: "Bagnard Sans"; */
+  /* font-weight: 700; */
+  color: #0E3DBE;
+  text-decoration: none;
+}
+
+#miranda:hover {
+  color: #547EF2;
+}
+
+.center-block {
+  display: flex;
+  justify-content: center;
+}
+
+.narrow {
+  width: 75vw;
+}
+
+/* contact links */
+#contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#contact ul {
+  list-style-type: none;
+  text-align: right;
+  line-height: 150%;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #587A00;
+}
+
+#contact a:hover {
+  text-decoration: none;
+  color: #23221E;
+}
+
+.image-block {
+  display: grid;
+  grid-template-columns: repeat(2, 0.8fr) 1.4fr;
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap: 10px;
+  grid-template-areas:
+    "image image image"
+    "title dates description";
+}
+
+.image {
+  grid-area: image;
+  max-height: 40vh;
+  width: 100%;
+  background-color: #a3a57d;
+  margin-top: 60px;
+}
+
+.image img {
+  max-height: 36vh;
+  margin: 2vh;
+}
+
+.title {
+  grid-area: title;
+  align-self: center;
+}
+
+.title a {
+  text-decoration: none;
+  color: #0E3DBE;
+
+}
+
+.title a:hover {
+  text-decoration: none;
+  color: #1B53EE;
+}
+
+.dates {
+  grid-area: dates;
+  align-self: center;
+
+}
+
+.description {
+  grid-area: description;
+  align-self: center;
+
+}
